@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class HelloWorldController {
 	
-	@GetMapping("/helloworld")
+	@GetMapping("/hello-world")
 	public String helloWordld() {
 		return "Hello World";
 		
 	}
 	
-	@GetMapping("/bsm")
-	public String bsmGenerationBrasil() {
-		return "Comunicação"
-		+ "Mentalidade de Crescimento;\r\n"
-		+ "Responsabilidade Pessoal;\n"
-		+ "Orientação ao Futuro;\n"
-		+ "Trabalho em Equipe;\n"
-		+ "Orientação ao Futuro;\n"
-		+ "Proatividade;\n"
-		+ "Orientação ao Detalhe;\n";
-		
+	@GetMapping("/lista-bsm")
+	public String listaBsm() {
+		return "- BSM Generation Brasil;<br> <br>"
+		+ "- Mentalidade de Crescimento;<br>"
+		+ "- Responsabilidade Pessoal;<br>"
+		+ "- Orientação ao Futuro;<br>"
+		+ "- Trabalho em Equipe;<br>"
+		+ "- Orientação ao Futuro;<br>"
+		+ "- Proatividade;<br>"
+		+ "- Orientação ao Detalhe;<br>"
+		+ "- Comunicação;<br>";
 	}
 	
 	@GetMapping("/aprendizado")
